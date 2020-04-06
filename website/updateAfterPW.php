@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 
 $videoID = "";
 if(isset($_GET['link'])){
-    $videoID = $_GET['link']; // CRITICAL PART 
+    $videoID = $_GET['link']; //Takes vID from processUpdate.php
   } else {
     echo "failed to retireve vid to update game.";
     echo "\n";

@@ -38,9 +38,9 @@
                     echo "<td>" . $row['developer'] . "</td>";
                     $vID = $row['vid'];  
                     $vTitle = $row['title'];
-                    echo " <td> <a href=\"showReviews.php?link=$vID\">View Reviews</a> </td>";
-                    echo "<td><a href=\"post.php?link2=$vID\"> Post Review </a></td>";
-                    echo " <td> <a href=\"update.php?link3=$vID\">Update Game (ADMIN ONLY)</a> </td>";
+                    echo " <td> <a href=\"showReviews.php?link=$vID\">View Reviews</a> </td>"; //Sends vID to showReviews.php
+                    echo "<td><a href=\"post.php?link2=$vID\"> Post Review </a></td>"; //Sends vID to post.php
+                    echo " <td> <a href=\"update.php?link3=$vID\">Update Game (ADMIN ONLY)</a> </td>"; //Sends vID to update.php
                     echo "</tr>";
             }
             echo "</table>";
